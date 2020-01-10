@@ -34,3 +34,11 @@ cat id_rsa.pub
 ssh -T git@github.com
 出现如下结果，则成功：
 Hi nicknamewzj! You've successfully authenticated, but GitHub does not provide shell access.
+
+小插曲2：
+git 修改查看文件权限：
+1：查看文件权限：
+git ls-tree HEAD
+
+2: 修改文件权限：
+git update-index --chmod=+x xxx.sh
